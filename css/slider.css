@@ -1,53 +1,194 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-#carousel-container {
-    width: 80%;
-    margin: 50px auto;
-    overflow: hidden;
+.carousel-container {
     position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
 }
 
-#carousel {
+.carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-.carousel-item {
-    min-width: 1000px;
-    text-align: center;
-
+.carousel-slide {
+    min-width: 100%;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.carousel-img {
-    object-fit: cover;
+.slide_img {
+    width: 500px;
+
     border-radius: 50%;
-    width: 400px;
-    height: 400px;
-    margin-left: 350px;
-    /* height: auto; */
+    object-fit: cover;
+    height: 500px;
+    display: block;
 }
 
 .carousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 50px;
-    cursor: pointer;
-    background: none;
+    font-size: 24px;
     border: none;
+    background: none;
+    cursor: pointer;
     outline: none;
-    color: #f30e0e;
 }
 
-#prev-btn {
+#prevBtn {
     left: 10px;
 }
 
-#next-btn {
+#nextBtn {
     right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide_img {
+        width: 100px;
+
+        border-radius: 50%;
+        object-fit: cover;
+        height: 100px;
+        display: block;
+    }
+
+    .carousel-container {
+        position: relative;
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .carousel-slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide_img {
+        width: 100px;
+
+        border-radius: 50%;
+        object-fit: cover;
+        height: 100px;
+        display: block;
+    }
+
+    .carousel-container {
+        position: relative;
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .carousel-slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide_img {
+        width: 300px;
+
+        border-radius: 50%;
+        object-fit: cover;
+        height: 300px;
+        display: block;
+    }
+
+    .carousel-container {
+        position: relative;
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .carousel-slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide_img {
+        width: 300px;
+
+        border-radius: 50%;
+        object-fit: cover;
+        height: 300px;
+        display: block;
+    }
+
+    .carousel-container {
+        position: relative;
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .carousel-slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide_img {
+        width: 300px;
+
+        border-radius: 50%;
+        object-fit: cover;
+        height: 300px;
+        display: block;
+    }
+
+    .carousel-container {
+        position: relative;
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
 }

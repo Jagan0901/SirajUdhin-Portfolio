@@ -3590,3 +3590,23 @@ body.anita-unload.anita-show-menu .anita-nav {
         transform: translateX(0);
     }
 }
+
+.before-after{
+    width: 1360px;
+    margin-left: 20px;
+}
+
+.tri-pixel-logo {
+    width: 192px;
+    height: 80px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .before-after {
+            width: 100%;
+            margin-left: 0px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+}
