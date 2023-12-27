@@ -44,3 +44,30 @@ document.addEventListener("DOMContentLoaded", function () {
   nextBtn.addEventListener("click", showNextSlide);
   prevBtn.addEventListener("click", showPrevSlide);
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.querySelector(".lap-carousel");
+  const prevBtn = document.getElementById("lap-prevBtn");
+  const nextBtn = document.getElementById("lap-nextBtn");
+
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(${-currentIndex * 100}%)`;
+  }
+
+  function showNextSlide() {
+    currentIndex = (currentIndex + 1) % carousel.children.length;
+    updateCarousel();
+  }
+
+  function showPrevSlide() {
+    currentIndex =
+      (currentIndex - 1 + carousel.children.length) % carousel.children.length;
+    updateCarousel();
+  }
+
+  nextBtn.addEventListener("click", showNextSlide);
+  prevBtn.addEventListener("click", showPrevSlide);
+});

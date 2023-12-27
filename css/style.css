@@ -3602,6 +3602,10 @@ body.anita-unload.anita-show-menu .anita-nav {
     object-fit: cover;
 }
 
+.gallery-title {
+    text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
     .before-after {
             width: 100%;

@@ -4,7 +4,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
+
 .carousel-container {
+    display: none;
     position: relative;
     width: 80%;
     max-width: 800px;
@@ -27,7 +30,6 @@ body {
 
 .slide_img {
     width: 500px;
-
     border-radius: 50%;
     object-fit: cover;
     height: 500px;
@@ -53,6 +55,57 @@ body {
     right: 10px;
 }
 
+
+/* For bigger screens */
+.lap-carousel-container {
+    /* display: none; */
+    position: relative;
+    width: 80%;
+    min-width: 1600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.lap-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.lap-carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lap-slide_img {
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 200px;
+    display: block;
+}
+
+.lap-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#lap-prevBtn {
+    left: 10px;
+}
+
+#lap-nextBtn {
+    right: 10px;
+}
+
 @media only screen and (max-width: 600px) {
     .carousel-slide {
         min-width: 100%;
@@ -72,6 +125,7 @@ body {
     }
 
     .carousel-container {
+        display:flex;
         position: relative;
         width: 90%;
         max-width: 800px;
@@ -79,6 +133,10 @@ body {
         overflow: hidden;
         margin-bottom: 50px;
     }
+
+        .lap-carousel-container{
+            display: none;
+        }
 }
 
 @media only screen and (min-width: 600px) {
@@ -107,9 +165,42 @@ body {
         overflow: hidden;
         margin-bottom: 50px;
     }
+
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 768px) {
+    .carousel-slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide_img {
+        width: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        height: 100px;
+        display: block;
+    }
+
+    .carousel-container {
+        display: flex;
+        position: relative;
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+
+         .lap-carousel-container {
+             display: none;
+         }
+}
+
+@media only screen and (min-width: 768px) {
     .carousel-slide {
         min-width: 100%;
         box-sizing: border-box;
@@ -128,6 +219,7 @@ body {
     }
 
     .carousel-container {
+        /* display: flex; */
         position: relative;
         width: 90%;
         max-width: 800px;
