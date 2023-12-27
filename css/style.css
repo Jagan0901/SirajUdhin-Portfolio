@@ -3609,4 +3609,21 @@ body.anita-unload.anita-show-menu .anita-nav {
             margin-top: 5px;
             margin-bottom: 5px;
         }
+
+         .contact {
+             display: flex;
+             flex-direction: column;
+         }
+    
+         .contact-form {
+             display: flex;
+             flex-direction: column;
+         }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact {
+        width: 70%;
+        padding-left: 70px;
+    }
 }
