@@ -26,7 +26,9 @@ const anita_config = {
     // },
     Home: "index.html",
     Galleries: {
+      Road: "road.html",
       Vintage: "vintage.html",
+      Track: "track.html",
       Adventure: "adventure.html",
       // 'Slider': {
       //     'Parallax Movement': 'albums-slider-parallax.html',
@@ -50,8 +52,6 @@ const anita_config = {
       //     'Masonry: 4 Columns': 'albums-masonry-4col.html'
       // },
       // 'Justified': 'albums-justified.html',
-      Track: "track.html",
-      Road: "road.html",
     },
     About: "page-about.html",
     // 'Services': 'page-services.html',

@@ -3631,3 +3631,31 @@ body.anita-unload.anita-show-menu .anita-nav {
         padding-left: 70px;
     }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .before-after {
+            width: 94%;
+            margin-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+}
+@media only screen and (min-width: 800px) {
+    .before-after {
+        width: 96%;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+            .before-after {
+                width: 96%;
+                margin-left: 20px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+}
